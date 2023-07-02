@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.container {
+  position: absolute;
+  /* height: 20vh; */
+  width: 35vw;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.container h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #002765;
+}
+
+.search {
+  background-color: #edeef0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  background: transparent;
+  padding: 10px 20px 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.search button {
+  background: #ff5945;
+  width: 6rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #000;
+  padding-left: 5px;
+}
+
+ul {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+ul li {
+  position: relative;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+ul li i {
+  font-size: 14px;
+  padding: 10px;
+  height: 100%;
+  font-weight: bold;
+  color: #000;
+}
+
+ul li.active {
+  text-decoration: line-through;
+}
+
+ul li .fa-xmark {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 0px;
+  top: 0px;
+  font-size: 20px;
+  color: #555;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li .fa-xmark:hover {
+  background: #edeef0;
+}

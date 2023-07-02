@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2>To-Do List <i class="fa-solid fa-clipboard-list"></i></h2>
+        <div class="search">
+            <input type="text" id="input-box" placeholder="Add Your Text Here" autofocus>
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list">
+            <!-- <li class="active"><i class="fa-solid fa-circle-check"></i>Task 1</li>
+            <li><i class="fa-regular fa-circle"></i>Task 2</li>
+            <li><i class="fa-regular fa-circle"></i>Task 3</li> -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
